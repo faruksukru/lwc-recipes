@@ -54,8 +54,15 @@
                     <name>displayOption</name>
                     <value>BOTH</value>
                 </componentInstanceProperties>
+<<<<<<< HEAD
                 <componentName>runtime_sales_merge:mergeCandidatesPreviewCard</componentName>
                 <identifier>runtimeSalesMergeMergeCandidatesPreviewCard</identifier>
+=======
+                <componentName
+                >runtime_sales_merge:mergeCandidatesPreviewCard</componentName>
+                <identifier
+                >runtimeSalesMergeMergeCandidatesPreviewCard</identifier>
+>>>>>>> 1ccbaa9cc65d9bc26c0930a883850d366b33763a
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -253,6 +260,12 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>ldsNotifyRecordUpdateAvailable</componentName>
+                <identifier>c_ldsNotifyRecordUpdateAvailable</identifier>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

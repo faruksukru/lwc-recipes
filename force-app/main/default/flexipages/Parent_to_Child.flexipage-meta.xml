@@ -9,6 +9,15 @@
             <componentInstance>
                 <componentName>apiProperty</componentName>
                 <identifier>apiProperty</identifier>
+<<<<<<< HEAD
+=======
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>apiSpread</componentName>
+                <identifier>c_apiSpread</identifier>
+>>>>>>> 1ccbaa9cc65d9bc26c0930a883850d366b33763a
             </componentInstance>
         </itemInstances>
         <name>region2</name>

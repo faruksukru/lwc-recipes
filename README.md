@@ -40,7 +40,7 @@ A collection of easy-to-digest code examples for Lightning Web Components. Each 
 1. If you haven't already done so, authorize your hub org and provide it with an alias (**myhuborg** in the command below):
 
     ```
-    sfdx auth:web:login -d -a myhuborg
+    sf org login web -d -a myhuborg
     ```
 
 1. Clone the lwc-recipes repository:
@@ -53,31 +53,31 @@ A collection of easy-to-digest code examples for Lightning Web Components. Each 
 1. Create a scratch org and provide it with an alias (**lwc-recipes** in the command below):
 
     ```
-    sfdx force:org:create -s -f config/project-scratch-def.json -a lwc-recipes
+    sf org create scratch -d -f config/project-scratch-def.json -a lwc-recipes
     ```
 
 1. Push the app to your scratch org:
 
     ```
-    sfdx force:source:push
+    sf project deploy start
     ```
 
 1. Assign the **recipes** permission set to the default user:
 
     ```
-    sfdx force:user:permset:assign -n recipes
+    sf org assign permset -n recipes
     ```
 
 1. Import sample data:
 
     ```
-    sfdx force:data:tree:import -p ./data/data-plan.json
+    sf data tree import -p ./data/data-plan.json
     ```
 
 1. Open the scratch org:
 
     ```
-    sfdx force:org:open
+    sf org open
     ```
 
 1. In **Setup**, under **Themes and Branding**, activate the **Recipes Lite** or **Recipes Blue** theme.
@@ -92,7 +92,7 @@ Make sure to start from a brand-new environment to avoid conflicts with previous
 
 1. Log in to your org
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3t000002wSAUAA2) to install the Recipes unlocked package in your org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3t000002wSUgAAM) to install the Recipes unlocked package in your org.
 
 1. Select **Install for All Users**
 
@@ -105,7 +105,7 @@ Make sure to start from a brand-new environment to avoid conflicts with previous
     - Drag the **Accounts-Contacts.csv** file you just saved to the upload area.
     - Click **Next**, **Next**, and **Start Import**.
 
-1. If you're attempting the [Quick Start](https://trailhead.salesforce.com/en/content/learn/projects/quick-start-ebikes-sample-app) on Trailhead, this step is required, but otherwise, skip:
+1. If you're attempting the [Quick Start](https://trailhead.salesforce.com/en/content/learn/projects/quick-start-lwc-recipes-app) on Trailhead, this step is required, but otherwise, skip:
 
     - Go to **Setup > Users > Permission Sets**.
     - Click **recipes**.
@@ -133,31 +133,31 @@ Make sure to start from a brand-new environment to avoid conflicts with previous
 1. Authorize your Trailhead Playground or Developer org and provide it with an alias (**mydevorg** in the command below):
 
     ```
-    sfdx auth:web:login -s -a mydevorg
+    sf org login web -s -a mydevorg
     ```
 
 1. Run this command in a terminal to deploy the app.
 
     ```
-    sfdx force:source:deploy -p force-app
+    sf project deploy start -d force-app
     ```
 
 1. Assign the `recipes` permission set to the default user.
 
     ```
-    sfdx force:user:permset:assign -n recipes
+    sf org assign permset -n recipes
     ```
 
 1. Import some sample data.
 
     ```
-    sfdx force:data:tree:import -p ./data/data-plan.json
+    sf data tree import -p ./data/data-plan.json
     ```
 
 1. If your org isn't already open, open it now:
 
     ```
-    sfdx force:org:open -u mydevorg
+    sf org open -o mydevorg
     ```
 
 1. In **Setup**, under **Themes and Branding**, activate the **Recipes Lite** or **Recipes Blue** theme.

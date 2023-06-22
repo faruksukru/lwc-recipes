@@ -217,7 +217,15 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>Refresh_View</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Wire</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>GraphQL</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
