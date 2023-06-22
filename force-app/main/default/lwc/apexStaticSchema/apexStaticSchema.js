@@ -1,6 +1,6 @@
 import { LightningElement, wire } from 'lwc';
 import { getSObjectValue } from '@salesforce/apex';
-import getSingleContact from '@salesforce/apex/ContactController.getSingleContact';
+import getSingleContact from '@salesforce/apex/contactController.getSingleContact';
 
 import NAME_FIELD from '@salesforce/schema/Contact.Name';
 import TITLE_FIELD from '@salesforce/schema/Contact.Title';

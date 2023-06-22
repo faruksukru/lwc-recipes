@@ -1,6 +1,6 @@
 import { LightningElement, wire } from 'lwc';
-import getContacts from '@salesforce/apex/ContactController.getContactList';
-import updateContacts from '@salesforce/apex/ContactController.updateContacts';
+import getContacts from '@salesforce/apex/contactController.getContactList';
+import updateContacts from '@salesforce/apex/contactController.updateContacts';
 import { refreshApex } from '@salesforce/apex';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 

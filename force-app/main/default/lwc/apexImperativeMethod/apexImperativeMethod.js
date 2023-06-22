@@ -1,5 +1,5 @@
 import { LightningElement } from 'lwc';
-import getContactList from '@salesforce/apex/ContactController.getContactList';
+import getContactList from '@salesforce/apex/contactController.getContactList';
 
 export default class ApexImperativeMethod extends LightningElement {
     contacts;

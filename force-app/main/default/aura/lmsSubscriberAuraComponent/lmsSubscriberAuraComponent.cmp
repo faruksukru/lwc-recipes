@@ -1,5 +1,5 @@
 <aura:component
-    controller="ContactController"
+    controller="contactController"
     implements="flexipage:availableForAllPageTypes"
 >
     <aura:attribute name="contactId" type="Id" />

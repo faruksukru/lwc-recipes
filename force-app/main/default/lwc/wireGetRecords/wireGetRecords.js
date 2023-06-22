@@ -2,7 +2,7 @@ import { LightningElement, wire } from 'lwc';
 import { getRecords } from 'lightning/uiRecordApi';
 import NAME_FIELD from '@salesforce/schema/Contact.Name';
 import EMAIL_FIELD from '@salesforce/schema/Contact.Email';
-import getContactList from '@salesforce/apex/ContactController.getContactList';
+import getContactList from '@salesforce/apex/contactController.getContactList';
 
 export default class WireGetRecords extends LightningElement {
     records;

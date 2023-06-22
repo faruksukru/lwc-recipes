@@ -1,5 +1,5 @@
 import { LightningElement, wire } from 'lwc';
-import getContactList from '@salesforce/apex/ContactController.getContactList';
+import getContactList from '@salesforce/apex/contactController.getContactList';
 
 export default class EventWithData extends LightningElement {
     selectedContact;

@@ -3,7 +3,7 @@ import { getRecords } from 'lightning/uiRecordApi';
 import NAME_FIELD from '@salesforce/schema/Contact.Name';
 import EMAIL_FIELD from '@salesforce/schema/Contact.Email';
 import ACCOUNT_NAME_FIELD from '@salesforce/schema/Account.Name';
-import getContactList from '@salesforce/apex/ContactController.getContactList';
+import getContactList from '@salesforce/apex/contactController.getContactList';
 import getAccountList from '@salesforce/apex/AccountController.getAccountList';
 
 export default class WireGetRecordsDifferentTypes extends LightningElement {

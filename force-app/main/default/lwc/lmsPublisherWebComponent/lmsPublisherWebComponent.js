@@ -1,5 +1,5 @@
 import { LightningElement, wire } from 'lwc';
-import getContactList from '@salesforce/apex/ContactController.getContactList';
+import getContactList from '@salesforce/apex/contactController.getContactList';
 
 // Import message service features required for publishing and the message channel
 import { publish, MessageContext } from 'lightning/messageService';

@@ -1,5 +1,5 @@
 import { LightningElement, wire } from 'lwc';
-import getContacts from '@salesforce/apex/ContactController.getContactList';
+import getContacts from '@salesforce/apex/contactController.getContactList';
 import { refreshApex } from '@salesforce/apex';
 import { updateRecord } from 'lightning/uiRecordApi';
 

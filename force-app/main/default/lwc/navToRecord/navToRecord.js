@@ -1,6 +1,6 @@
 import { LightningElement, wire } from 'lwc';
 import { NavigationMixin } from 'lightning/navigation';
-import getSingleContact from '@salesforce/apex/ContactController.getSingleContact';
+import getSingleContact from '@salesforce/apex/contactController.getSingleContact';
 
 export default class NavToRecord extends NavigationMixin(LightningElement) {
     @wire(getSingleContact) contact;

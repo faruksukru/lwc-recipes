@@ -1,5 +1,5 @@
 import { LightningElement, wire } from 'lwc';
-import findContacts from '@salesforce/apex/ContactController.findContacts';
+import findContacts from '@salesforce/apex/contactController.findContacts';
 
 /** The delay used when debouncing event handlers before invoking Apex. */
 const DELAY = 300;
